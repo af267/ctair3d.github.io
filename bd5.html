@@ -140,7 +140,7 @@
             var currentSkybox = scene.createDefaultSkybox(hdrTexture, false);
         
             // Append glTF model to scene.
-            BABYLON.SceneLoader.Append("/", 'bd5-a2.glb', scene, function (scene) {
+            BABYLON.SceneLoader.Append("/ctair3d.github.io/", 'bd5-a2.glb', scene, function (scene) {
               scene.createDefaultCameraOrLight(true, true, true);
               scene.activeCamera = new BABYLON.FreeCamera("FreeCamera", new BABYLON.Vector3(8, 1.5, -16), scene);
               scene.activeCamera.setTarget(new BABYLON.Vector3(0, 1.5, 0));
@@ -203,7 +203,7 @@
                 }
               }
             });
-          BABYLON.SceneLoader.Append("/", 'hangar-1.glb', scene, function (scene) {});
+          BABYLON.SceneLoader.Append("/ctair3d.github.io/", 'hangar-1.glb', scene, function (scene) {});
 
           //Ground
           var ground = BABYLON.Mesh.CreatePlane("ground", 1000.0, scene);
